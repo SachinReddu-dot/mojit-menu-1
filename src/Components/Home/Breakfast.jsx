@@ -17,8 +17,8 @@ const Breakfast = () => {
   return (      
       <div>
         <div className="w-full text-center mb-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">{title}</h2>
-            <h3 className="text-sm sm:text-base md:text-lg">{served_time}</h3>
+            <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold my-2">{title}</h2>
+            <h3 className="text-lg sm:text-sm md:text-base text-gray-600">{served_time}</h3>
         </div>
 
         <div className="w-full">
