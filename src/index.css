@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+  background-color: white;
+  color: black;
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(./assets/Fonts/oswald/Oswald-Regular.ttf);
+}
