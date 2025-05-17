@@ -25,15 +25,15 @@ console.log(mainCourse)
         {categories.map((food, index) => (
           <div
             key={index}
-            className="w-full flex flex-col items-center mb-12"
+            className="w-full flex flex-col items-center lg:justify-center mb-12"
           >
-            <h1 className="text-3xl mt-5 sm:text-2xl md:text-3xl font-[oswald] font-semibold my-6 uppercase">
+            <h1 className="text-3xl mt-5 sm:text-2xl md:text-4xl font-[oswald] font-semibold my-6 uppercase">
               {food.name}
             </h1>
 
-            <div className="w-full flex flex-wrap gap-4">
+            <div className="w-full flex flex-wrap lg:items-center gap-4">
               {food.items.map((item, idx) => (
-                <div className='w-full'
+                <div className='max-sm:w-full'
                   key={idx}
                 >
                   <Card2 item={item} />
@@ -52,9 +52,9 @@ console.log(mainCourse)
        {categories.map((food, index)=>(
         <div key={index} className='w-full flex flex-col items-center justify-center'>
           <h1 className='text-4xl font-[oswald] font-semibold my-10 uppercase'>{food.name}</h1>
-          <div className='w-full flex items-center justify-center flex-wrap gap-4'>
+          <div className='w-full flex items-center flex-wrap gap-4'>
             {food.items.map((item, index)=>(
-              <Card key={index} item={item}/>
+              <Card2 key={index} item={item}/>
             ))}
           </div>
         </div>

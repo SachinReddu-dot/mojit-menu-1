@@ -25,7 +25,7 @@ const Breakfast = () => {
         <div className="w-full">
             <div className="w-full flex flex-wrap items-center gap-4">
             {categories.items.map((item, index) => (
-                <div className='w-full' key={index} onClick={()=>detailPage(item)}>
+                <div className='max-sm:w-full' key={index} onClick={()=>detailPage(item)}>
                     <Card2 item={item} />
                 </div>
             ))}

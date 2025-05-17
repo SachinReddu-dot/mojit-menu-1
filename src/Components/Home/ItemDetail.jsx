@@ -16,7 +16,7 @@ const ItemDetail = () => {
     <>
 
 <div className='w-full h-screen fixed top-0 left-0 bg-black/50 flex items-center justify-center z-40 overflow-y-auto'>
-  <div className='bg-white w-full sm:w-5/6 md:w-2/3 h-auto sm:h-screen relative p-5 pt-18 max-sm:pt-40 overflow-auto rounded-md'>
+  <div className='bg-white w-full sm:w-5/6 md:w-[90%] h-auto sm:h-screen relative p-5 pt-18 max-sm:pt-82 overflow-auto rounded-md'>
     
     {/* Top Section: Image & Description */}
     <div className='w-full flex flex-col md:flex-row gap-5'>
@@ -30,9 +30,9 @@ const ItemDetail = () => {
       </div>
 
       {/* Text & Tags */}
-      <div className='w-full md:w-1/2 h-fit bg-zinc-300 p-5 rounded-lg'>
-        <h2 className='text-2xl md:text-3xl font-semibold capitalize font-[oswald]'>{menu.name}</h2>
-        <p className='text-base md:text-lg font-normal text-zinc-700 my-5'>
+      <div className='w-full md:w-1/2 h-fit p-5 rounded-lg'>
+        <h2 className='text-2xl md:text-4xl font-semibold capitalize font-[oswald]'>{menu.name}</h2>
+        <p className='text-base md:text-xl font-normal text-zinc-700 my-5'>
           {menu.description}
         </p>
         <div className='w-full flex flex-wrap items-center gap-2'>
@@ -48,13 +48,13 @@ const ItemDetail = () => {
 
     {/* Price Section */}
     <div className='font-[oswald] w-full flex flex-col items-center justify-center text-xl max-sm:lg p-3'>
-                 <button className='bg-[#F9E4DF] border-1 border-[#F1C4B8] py-1 text-zinc-700 w-[40%] max-sm:w-full rounded-md hover:scale-105 hover:text-black transition-all duration-300'>
-                    <i class="ri-money-rupee-circle-fill text-2xl"></i>
+                 <button className='bg-[#F9E4DF] border-1 border-[#F1C4B8] py-1 text-zinc-700 w-[40%] max-lg:w-[60%] max-sm:w-full rounded-md hover:scale-105 hover:text-black transition-all duration-300 max-lg:text-3xl'>
+                    <i class="ri-money-rupee-circle-fill text-2xl max-lg:text-3xl"></i>
                     {menu.price.regular}
                  </button>
-                 <h2 className='py-1 max-sm:hidden'>&</h2>
-                  <button className='bg-[#F5F3EF] max-sm:mt-3 border-1 py-1 border-[#dfd9cf] text-zinc-700 w-[40%] max-sm:w-full rounded-md hover:scale-105 hover:text-black transition-all duration-300'>
-                      <i class="ri-money-rupee-circle-fill text-2xl mr-0.5"></i>
+                 <h2 className='py-1 max-sm:hidden max-lg:text-3xl max-lg:py-3'>&</h2>
+                  <button className='bg-[#F5F3EF] max-sm:mt-3 border-1 py-1 border-[#dfd9cf] text-zinc-700 w-[40%] max-lg:w-[60%] max-sm:w-full rounded-md hover:scale-105 hover:text-black transition-all duration-300 max-lg:text-3xl'>
+                      <i class="ri-money-rupee-circle-fill text-2xl mr-0.5 max-lg:text-3xl"></i>
                       {menu.price.with_chai} with Chai
                   </button>
             </div>
@@ -64,15 +64,15 @@ const ItemDetail = () => {
     {/* Ingredients & Add-ons Section */}
     <div className='w-full flex flex-col md:flex-row gap-3'>
       {/* Ingredients */}
-      <div className='w-full md:w-1/2 h-fit bg-zinc-300 p-5 rounded-lg'>
-        <h2 className='text-xl md:text-2xl font-semibold capitalize font-[oswald]'>Ingredients</h2>
-        <p className='text-sm md:text-base font-normal text-zinc-700 my-5'>
+      <div className='w-full md:w-1/2 h-fit bg-[#F9E4DF] border border-[#F1C4B8] p-5 rounded-lg'>
+        <h2 className='text-xl md:text-3xl font-semibold capitalize font-[oswald]'>Ingredients</h2>
+        <p className='text-sm md:text-lg font-normal text-zinc-700 my-5'>
           Corn on the Cob, Maple Syrup, Red Pepper Flakes, ...
         </p>
       </div>
 
       {/* Add Ons */}
-      <div className='w-full md:w-1/2 h-fit bg-zinc-300 p-5 rounded-lg font-medium flex flex-col gap-3'>
+      <div className='w-full md:w-1/2 h-fit bg-[#F9E4DF] border border-[#F1C4B8] p-5 rounded-lg font-medium flex flex-col gap-3'>
         <h2 className='text-xl md:text-2xl font-semibold capitalize font-[oswald] mb-3'>Add On</h2>
 
         {[

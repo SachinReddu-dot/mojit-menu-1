@@ -47,10 +47,10 @@ const Card2 = ({item}) => {
             
             {/* Tags */}
             <div className='w-full flex items-center gap-2 absolute top-3 left-3'>
-            <div className='text-white bg-zinc-900/80 py-0.5 text-xs sm:text-sm font-normal rounded-full px-3 backdrop-blur-sm'>
+            <div className='text-white bg-zinc-900/90 py-0.5 text-xs sm:text-sm font-normal rounded-full px-3 backdrop-blur-xl'>
                 <h1>Popular</h1>
             </div>
-            <div className='text-white bg-green-600/80 py-0.5 text-xs sm:text-sm font-normal rounded-full px-3 backdrop-blur-sm'>
+            <div className='text-white bg-green-600/80 py-0.5 text-xs sm:text-sm font-normal rounded-full px-3 backdrop-blur-xl'>
                 <h1>Veg</h1>
             </div>
             </div>
