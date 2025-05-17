@@ -1,6 +1,7 @@
 import React from 'react'
 import {mainCourse} from '/src/Utils/Menu.js'
 import Card from './Card';
+import Card2 from './Card2';
 
 const MainCourse = () => {
 
@@ -11,9 +12,9 @@ console.log(mainCourse)
   
   return (
     <>
-      <div className="w-full px-4 sm:px-6 md:px-8 py-8">
-        <div className="w-full text-center mb-8">
-          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold my-2">
+      <div className="w-full">
+        <div className="w-full text-center pt-2 max-sm:py-3">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold">
             {title}
           </h2>
           <h3 className="text-lg sm:text-sm md:text-base text-gray-600">
@@ -24,18 +25,18 @@ console.log(mainCourse)
         {categories.map((food, index) => (
           <div
             key={index}
-            className="w-full flex flex-col items-center justify-center mb-12"
+            className="w-full flex flex-col items-center mb-12"
           >
-            <h1 className="text-2xl sm:text-2xl md:text-3xl font-[oswald] font-semibold text-center my-6 uppercase">
+            <h1 className="text-3xl mt-5 sm:text-2xl md:text-3xl font-[oswald] font-semibold my-6 uppercase">
               {food.name}
             </h1>
 
-            <div className="w-full flex flex-wrap justify-center gap-4 px-2 sm:px-0">
+            <div className="w-full flex flex-wrap gap-4">
               {food.items.map((item, idx) => (
-                <div
+                <div className='w-full'
                   key={idx}
                 >
-                  <Card item={item} />
+                  <Card2 item={item} />
                 </div>
               ))}
             </div>

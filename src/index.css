@@ -9,3 +9,7 @@ body{
   font-family: oswald;
   src: url(./assets/Fonts/oswald/Oswald-Regular.ttf);
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
